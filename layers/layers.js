@@ -120,7 +120,7 @@ lyr_LIDAR_3.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTO
 lyr_VOLADAS_4.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_ENTREGADAS_5.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_INACCESIBLES_6.set('fieldImages', {'CLAVE1KTIJ': 'TextEdit', 'VUELO': 'TextEdit', 'No_Vuelo': 'TextEdit', 'DIA': 'TextEdit', 'TACHA': 'TextEdit', });
-lyr_MALLA_TIJUANA_1.set('fieldLabels', {'CLAVE1KTIJ': 'inline label - visible with data', 'VUELO': 'header label - always visible', 'No_Vuelo': 'hidden field', 'DIA': 'hidden field', });
+lyr_MALLA_TIJUANA_1.set('fieldLabels', {'CLAVE1KTIJ': 'inline label - visible with data', 'VUELO': 'hidden field', 'No_Vuelo': 'hidden field', 'DIA': 'hidden field', });
 lyr_ORTOFOTOYDEM_2.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_LIDAR_3.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_VOLADAS_4.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
