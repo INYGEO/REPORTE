@@ -106,7 +106,7 @@ var group_PROCESADAS = new ol.layer.Group({
                                 fold: "open",
                                 title: 'PROCESADAS'});
 
-lyr_google_0.setVisible(true);lyr_MALLA_TIJUANA_1.setVisible(true);lyr_ORTOFOTOYDEM_2.setVisible(true);lyr_LIDAR_3.setVisible(true);lyr_VOLADAS_4.setVisible(true);lyr_ENTREGADAS_5.setVisible(true);lyr_INACCESIBLES_6.setVisible(true);
+lyr_google_0.setVisible(true);lyr_MALLA_TIJUANA_1.setVisible(true);lyr_ORTOFOTOYDEM_2.setVisible(true);lyr_LIDAR_3.setVisible(false);lyr_VOLADAS_4.setVisible(true);lyr_ENTREGADAS_5.setVisible(true);lyr_INACCESIBLES_6.setVisible(true);
 var layersList = [lyr_google_0,lyr_MALLA_TIJUANA_1,group_PROCESADAS,lyr_VOLADAS_4,lyr_ENTREGADAS_5,lyr_INACCESIBLES_6];
 lyr_MALLA_TIJUANA_1.set('fieldAliases', {'CLAVE1KTIJ': 'CLAVE1KTIJ', 'VUELO': 'VUELO', 'No_Vuelo': 'No_Vuelo', 'DIA': 'DIA', });
 lyr_ORTOFOTOYDEM_2.set('fieldAliases', {'CLAVE1K': 'CLAVE1K', 'N_V': 'N_V', 'SECTOR': 'SECTOR', });
@@ -120,7 +120,7 @@ lyr_LIDAR_3.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTO
 lyr_VOLADAS_4.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_ENTREGADAS_5.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_INACCESIBLES_6.set('fieldImages', {'CLAVE1KTIJ': 'TextEdit', 'VUELO': 'TextEdit', 'No_Vuelo': 'TextEdit', 'DIA': 'TextEdit', 'TACHA': 'TextEdit', });
-lyr_MALLA_TIJUANA_1.set('fieldLabels', {'CLAVE1KTIJ': 'inline label - visible with data', 'VUELO': 'hidden field', 'No_Vuelo': 'hidden field', 'DIA': 'hidden field', });
+lyr_MALLA_TIJUANA_1.set('fieldLabels', {'CLAVE1KTIJ': 'inline label - visible with data', 'VUELO': 'header label - always visible', 'No_Vuelo': 'hidden field', 'DIA': 'hidden field', });
 lyr_ORTOFOTOYDEM_2.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_LIDAR_3.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_VOLADAS_4.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
