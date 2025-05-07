@@ -7,7 +7,8 @@ var style_MALLA_TIJUANA_1 = function(feature, resolution){
         variables: {}
     };
     
-    var labelText = ""; var value = feature.get("");
+    var labelText = ""; 
+    var value = feature.get("");
     var labelFont = "13.0px \'Rockwell Extra Bold\', sans-serif";
     var labelFill = "#ffe500";
     var bufferColor = "";
