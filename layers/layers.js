@@ -86,46 +86,28 @@ var lyr_ENTREGADAS_5 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/ENTREGADAS_5.png" /> ENTREGADAS'
             });
-var format_INACCESIBLES_6 = new ol.format.GeoJSON();
-var features_INACCESIBLES_6 = format_INACCESIBLES_6.readFeatures(json_INACCESIBLES_6, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_INACCESIBLES_6 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_INACCESIBLES_6.addFeatures(features_INACCESIBLES_6);
-var lyr_INACCESIBLES_6 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_INACCESIBLES_6, 
-                style: style_INACCESIBLES_6,
-                popuplayertitle: 'INACCESIBLES',
-                interactive: false,
-                title: '<img src="styles/legend/INACCESIBLES_6.png" /> INACCESIBLES'
-            });
 var group_PROCESADAS = new ol.layer.Group({
                                 layers: [lyr_ORTOFOTOYDEM_2,lyr_LIDAR_3,],
-                                fold: "open",
+                                fold: 'open',
                                 title: 'PROCESADAS'});
 
-lyr_google_0.setVisible(true);lyr_MALLA_TIJUANA_1.setVisible(true);lyr_ORTOFOTOYDEM_2.setVisible(true);lyr_LIDAR_3.setVisible(false);lyr_VOLADAS_4.setVisible(true);lyr_ENTREGADAS_5.setVisible(true);lyr_INACCESIBLES_6.setVisible(true);
-var layersList = [lyr_google_0,lyr_MALLA_TIJUANA_1,group_PROCESADAS,lyr_VOLADAS_4,lyr_ENTREGADAS_5,lyr_INACCESIBLES_6];
+lyr_google_0.setVisible(true);lyr_MALLA_TIJUANA_1.setVisible(true);lyr_ORTOFOTOYDEM_2.setVisible(true);lyr_LIDAR_3.setVisible(false);lyr_VOLADAS_4.setVisible(true);lyr_ENTREGADAS_5.setVisible(true);
+var layersList = [lyr_google_0,lyr_MALLA_TIJUANA_1,group_PROCESADAS,lyr_VOLADAS_4,lyr_ENTREGADAS_5];
 lyr_MALLA_TIJUANA_1.set('fieldAliases', {'CLAVE1KTIJ': 'CLAVE1KTIJ', 'VUELO': 'VUELO', 'No_Vuelo': 'No_Vuelo', 'DIA': 'DIA', });
 lyr_ORTOFOTOYDEM_2.set('fieldAliases', {'CLAVE1K': 'CLAVE1K', 'N_V': 'N_V', 'SECTOR': 'SECTOR', });
 lyr_LIDAR_3.set('fieldAliases', {'CLAVE1K': 'CLAVE1K', 'N_V': 'N_V', 'SECTOR': 'SECTOR', });
 lyr_VOLADAS_4.set('fieldAliases', {'CLAVE1K': 'CLAVE1K', 'N_V': 'N_V', 'SECTOR': 'SECTOR', });
 lyr_ENTREGADAS_5.set('fieldAliases', {'CLAVE1K': 'CLAVE1K', 'N_V': 'N_V', 'SECTOR': 'SECTOR', });
-lyr_INACCESIBLES_6.set('fieldAliases', {'CLAVE1KTIJ': 'CLAVE1KTIJ', 'VUELO': 'VUELO', 'No_Vuelo': 'No_Vuelo', 'DIA': 'DIA', 'TACHA': 'TACHA', });
 lyr_MALLA_TIJUANA_1.set('fieldImages', {'CLAVE1KTIJ': 'TextEdit', 'VUELO': 'TextEdit', 'No_Vuelo': 'TextEdit', 'DIA': 'TextEdit', });
 lyr_ORTOFOTOYDEM_2.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_LIDAR_3.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_VOLADAS_4.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
 lyr_ENTREGADAS_5.set('fieldImages', {'CLAVE1K': 'TextEdit', 'N_V': 'TextEdit', 'SECTOR': 'TextEdit', });
-lyr_INACCESIBLES_6.set('fieldImages', {'CLAVE1KTIJ': 'TextEdit', 'VUELO': 'TextEdit', 'No_Vuelo': 'TextEdit', 'DIA': 'TextEdit', 'TACHA': 'TextEdit', });
 lyr_MALLA_TIJUANA_1.set('fieldLabels', {'CLAVE1KTIJ': 'inline label - visible with data', 'VUELO': 'hidden field', 'No_Vuelo': 'hidden field', 'DIA': 'hidden field', });
 lyr_ORTOFOTOYDEM_2.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_LIDAR_3.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_VOLADAS_4.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
 lyr_ENTREGADAS_5.set('fieldLabels', {'CLAVE1K': 'no label', 'N_V': 'no label', 'SECTOR': 'no label', });
-lyr_INACCESIBLES_6.set('fieldLabels', {'CLAVE1KTIJ': 'no label', 'VUELO': 'no label', 'No_Vuelo': 'no label', 'DIA': 'no label', 'TACHA': 'no label', });
-lyr_INACCESIBLES_6.on('precompose', function(evt) {
+lyr_ENTREGADAS_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
